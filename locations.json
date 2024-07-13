@@ -1327,8 +1327,8 @@
         "client_name_id": "NPC_TutIsland_Bear",
         "region": "Tutorial Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 245.306,
+        "pos_y": -106.297
     },
     {
         "long_name": "Tutorial Island - Simon (Ragdoll Bear) Quest Completion Item",
@@ -1338,8 +1338,8 @@
         "client_name_id": "Item_Ragdoll",
         "region": "Tutorial Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 245.306,
+        "pos_y": -106.297
     },
     {
         "long_name": "Tutorial Island - Franny (Stick Duck) Quest Completion NPC",
@@ -1349,8 +1349,8 @@
         "client_name_id": "NPC_TutIsland_Duck",
         "region": "Tutorial Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 207.913,
+        "pos_y": -122.408
     },
     {
         "long_name": "Tutorial Island - Franny (Stick Duck) Quest Completion Item",
@@ -1360,8 +1360,8 @@
         "client_name_id": "Sword_Wood",
         "region": "Tutorial Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 207.913,
+        "pos_y": -122.408
     },
     {
         "long_name": "Tutorial Island - Gerald (Slime Giraffe) Quest Completion NPC",
@@ -1371,8 +1371,8 @@
         "client_name_id": "NPC_TutIsland_Giraffe",
         "region": "Tutorial Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 274.235,
+        "pos_y": -31.31
     },
     {
         "long_name": "Tutorial Island - Gerald (Slime Giraffe) Quest Completion Item",
@@ -1382,8 +1382,8 @@
         "client_name_id": "Hat_Slime",
         "region": "Tutorial Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 274.235,
+        "pos_y": -31.31
     },
     {
         "long_name": "Northeast (Canyon) - Darcie (Balloon Owl) Quest Completion NPC",
@@ -1393,8 +1393,8 @@
         "client_name_id": "NPC_Balloon_Owl",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 267.65,
+        "pos_y": 190.11
     },
     {
         "long_name": "Northeast (Canyon) - Darcie (Balloon Owl) Quest Completion Item",
@@ -1404,8 +1404,8 @@
         "client_name_id": "Item_Balloon",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 267.65,
+        "pos_y": 190.11
     },
     {
         "long_name": "Northeast (Canyon) - Broken Scooter Board Pickup (Kasen's Quest)",
@@ -1426,8 +1426,8 @@
         "client_name_id": "NPC_FetchVulture",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 203.4675,
+        "pos_y": 214.9132
     },
     {
         "long_name": "Northeast (Canyon) - Kasen (Scooter Vulture) Quest Completion Item",
@@ -1437,8 +1437,8 @@
         "client_name_id": "Shield_ScooterBoardBlue",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 203.4675,
+        "pos_y": 214.9132
     },
     {
         "long_name": "Northeast (Canyon) - Ssumantha (Waders Opposum) Quest Completion NPC",
@@ -1448,8 +1448,8 @@
         "client_name_id": "NPC_SurfOpossum",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 184.68,
+        "pos_y": 271.67
     },
     {
         "long_name": "Northeast (Canyon) - Ssumantha (Waders Opposum) Quest Completion Item",
@@ -1459,8 +1459,8 @@
         "client_name_id": "Shield_Tube",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 184.68,
+        "pos_y": 271.67
     },
     {
         "long_name": "Northeast (Canyon) - Mochi (Heights Bear) Quest Completion NPC",
@@ -1470,8 +1470,8 @@
         "client_name_id": "NPC_ScaredOfHeightsBear",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 178.96,
+        "pos_y": 213
     },
     {
         "long_name": "Southeast (Beach) - Tony (Chess Strategist Eagle) Quest Completion NPC",
@@ -1481,8 +1481,8 @@
         "client_name_id": "NPC_Chess_Eagle",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -67.349,
+        "pos_y": 133.664
     },
     {
         "long_name": "Southeast (Beach) - Tony (Chess Strategist Eagle) Quest Completion Item",
@@ -1492,8 +1492,8 @@
         "client_name_id": "Shield_Chessboard",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -67.349,
+        "pos_y": 133.664
     },
     {
         "long_name": "Southeast (Beach) - Thrown Pencil 1 (Sam's Quest)",
@@ -1503,8 +1503,8 @@
         "client_name_id": "Thrown_Pencil_1",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -56.216,
+        "pos_y": 220.591
     },
     {
         "long_name": "Southeast (Beach) - Thrown Pencil 2 (Sam's Quest)",
@@ -1514,8 +1514,8 @@
         "client_name_id": "Thrown_Pencil_2",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -56.216,
+        "pos_y": 220.591
     },
     {
         "long_name": "Southeast (Beach) - Thrown Pencil 3 (Sam's Quest)",
@@ -1525,8 +1525,8 @@
         "client_name_id": "Thrown_Pencil_3",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -56.216,
+        "pos_y": 220.591
     },
     {
         "long_name": "Southeast (Beach) - Sam (Pencil Jackal) Quest Completion NPC",
@@ -1536,8 +1536,8 @@
         "client_name_id": "NPC_Clumsy_Jackal",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -56.216,
+        "pos_y": 220.591
     },
     {
         "long_name": "Southeast (Beach) - Sam (Pencil Jackal) Quest Completion Item",
@@ -1547,8 +1547,8 @@
         "client_name_id": "Sword_Pencil",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -56.216,
+        "pos_y": 220.591
     },
     {
         "long_name": "Southeast (Beach) - Viraj (Hot Shot Elephant) Quest Completion NPC",
@@ -1558,8 +1558,8 @@
         "client_name_id": "NPC_Destroy_Elephant",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -19.51,
+        "pos_y": 279.39
     },
     {
         "long_name": "Southeast (Beach) - Mr. Doddler (No Littering Sloth) Quest Completion NPC",
@@ -1569,8 +1569,8 @@
         "client_name_id": "NPC_Old_Man_Sloth",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -53.22,
+        "pos_y": 186.775
     },
     {
         "long_name": "Southeast (Beach) - Mr. Doddler (No Littering Sloth) Quest Completion Item",
@@ -1580,8 +1580,8 @@
         "client_name_id": "Item_Gum",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -53.22,
+        "pos_y": 186.775
     },
     {
         "long_name": "Southeast (Beach) - Cade (Floofy Bull) Quest Completion NPCs",
@@ -1591,8 +1591,8 @@
         "client_name_id": "NPC_SwimBull",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -86.969,
+        "pos_y": 191.781
     },
     {
         "long_name": "Southeast (Beach) - Skate Pug (Skate Pug) Quest Completion NPCs",
@@ -1602,8 +1602,8 @@
         "client_name_id": "NPC_Skate_Pug",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -81.566,
+        "pos_y": 272.745
     },
     {
         "long_name": "Southeast (Beach) - Skate Pug (Skate Pug) Quest Completion Item",
@@ -1613,8 +1613,8 @@
         "client_name_id": "Shield_Skateboard",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -81.566,
+        "pos_y": 272.745
     },
     {
         "long_name": "Southeast (Beach) - Joe (Pose Hawk) Quest Completion NPC",
@@ -1624,8 +1624,8 @@
         "client_name_id": "NPC_WannaBeHawk",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -36.03577,
+        "pos_y": 187.3507
     },
     {
         "long_name": "East (Creeklands) - Madeline (Little Thing Mouse) Quest Completion NPC",
@@ -1635,8 +1635,8 @@
         "client_name_id": "NPC_AwkwardFriendly",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 114.4412,
+        "pos_y": 178.5546
     },
     {
         "long_name": "East (Creeklands) - Robin (Scared-to-Look Robin) Quest Completion NPC",
@@ -1646,8 +1646,8 @@
         "client_name_id": "NPC_Rescue_Robin",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 78.606,
+        "pos_y": 153.9352
     },
     {
         "long_name": "East (Creeklands) - Robin (Scared-to-Look Robin) Quest Completion Item",
@@ -1657,8 +1657,8 @@
         "client_name_id": "Shield_Palette",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 78.606,
+        "pos_y": 153.9352
     },
     {
         "long_name": "East (Creeklands) - Retainer Pickup (Becca's Quest)",
@@ -1679,8 +1679,8 @@
         "client_name_id": "NPC_Fetch_Shark",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 34.441,
+        "pos_y": 245.076
     },
     {
         "long_name": "Martin's Main Quest - Lucas (Cool Wolf) Quest Completion Item",
@@ -1767,8 +1767,8 @@
         "client_name_id": "Item_StickyHand",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "Junk 4 Trash - Trampoline Purchase",
@@ -1778,8 +1778,8 @@
         "client_name_id": "Shield_Stretch",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "Junk 4 Trash - Trash Can Lid Purchase",
@@ -1789,8 +1789,8 @@
         "client_name_id": "Shield_TrashCanLid",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "Junk 4 Trash - Wrench Purchase",
@@ -1800,8 +1800,8 @@
         "client_name_id": "Sword_Wrench",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "Junk 4 Trash - Paint Gun Purchase",
@@ -1811,8 +1811,8 @@
         "client_name_id": "Item_PaintGun",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "Junk 4 Trash - Grabby Hand Purchase",
@@ -1822,8 +1822,8 @@
         "client_name_id": "Sword_Grabby",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "Junk 4 Trash - Roy (Trash Raccoon) All Purchases NPC",
@@ -1833,8 +1833,8 @@
         "client_name_id": "NPC_TrashPanda",
         "region": "Junk 4 Trash",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 5.362534,
+        "pos_y": 154.2351
     },
     {
         "long_name": "South (Jetty) - Leeland (Painting Rabbit) Quest Completion NPC",
@@ -1844,8 +1844,8 @@
         "client_name_id": "NPC_Destroy_Rabbit",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -138.1606,
+        "pos_y": 138.998
     },
     {
         "long_name": "South (Jetty) - Leeland (Painting Rabbit) Quest Completion Item",
@@ -1855,8 +1855,8 @@
         "client_name_id": "Sword_Paintbrush",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -138.1606,
+        "pos_y": 138.998
     },
     {
         "long_name": "West (Forest) - Sierra (Origami Crane) Quest Completion NPC",
@@ -1866,8 +1866,8 @@
         "client_name_id": "NPC_Ninja_Crane",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -72.32233,
+        "pos_y": -108.1362
     },
     {
         "long_name": "West (Forest) - Sierra (Origami Crane) Quest Completion Item",
@@ -1877,8 +1877,8 @@
         "client_name_id": "Item_Shuriken",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -72.32233,
+        "pos_y": -108.1362
     },
     {
         "long_name": "West (Forest) - Romeo (Ninja Anteater) Nunchucks",
@@ -1888,8 +1888,8 @@
         "client_name_id": "Sword_Nunchucks",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -78.2,
+        "pos_y": -106.54
     },
     {
         "long_name": "West (Forest) - Ninja Clan Quest Completion NPCs",
@@ -1899,8 +1899,8 @@
         "client_name_id": "NPC_Ninja_Anteater",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -78.2,
+        "pos_y": -106.54
     },
     {
         "long_name": "West (Forest) - Ninja Clan Quest Completion Item",
@@ -1910,8 +1910,8 @@
         "client_name_id": "Hat_Ninja",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -78.2,
+        "pos_y": -106.54
     },
     {
         "long_name": "West (Forest) - Pepperoni (Obstacle Ostrich) Quest Completion NPCs",
@@ -1921,8 +1921,8 @@
         "client_name_id": "NPC_Obstacle_Ostrich",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -94.08074,
+        "pos_y": 27.94949
     },
     {
         "long_name": "West (Forest) - Pepperoni (Obstacle Ostrich) Quest Completion Item",
@@ -1932,8 +1932,8 @@
         "client_name_id": "Hat_SkateHelmet",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -94.08074,
+        "pos_y": 27.94949
     },
     {
         "long_name": "West (Forest) - Sorin, Roe, Beeritney (Lunch Trio) Quest Completion NPCs",
@@ -1943,8 +1943,8 @@
         "client_name_id": "NPC_LunchSwapSkink",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 104.257,
+        "pos_y": -128.176
     },
     {
         "long_name": "West (Forest) - Sorin, Roe, Beeritney (Lunch Trio) Quest Completion Item",
@@ -1954,8 +1954,8 @@
         "client_name_id": "Hat_Princess",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 104.257,
+        "pos_y": -128.176
     },
     {
         "long_name": "West (Forest) - Pot Kid (Eepy Armadillo) Quest Completion NPC",
@@ -1965,8 +1965,8 @@
         "client_name_id": "NPC_Pot_Armadillo",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -57.15413,
+        "pos_y": 3.653141
     },
     {
         "long_name": "West (Forest) - Penelope (Bastion Beaver) Quest Completion NPC",
@@ -1976,8 +1976,8 @@
         "client_name_id": "NPC_Warrior_Beaver",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 71.117,
+        "pos_y": -60.684
     },
     {
         "long_name": "West (Forest) - Penelope (Bastion Beaver) Quest Completion Item",
@@ -1987,8 +1987,8 @@
         "client_name_id": "Shield_TowerShield",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 71.117,
+        "pos_y": -60.684
     },
     {
         "long_name": "West (Forest) - Eva (Photographer Cat) Quest Completion NPC",
@@ -1998,8 +1998,8 @@
         "client_name_id": "NPC_Shy_Cat",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 9.232,
+        "pos_y": -76.282
     },
     {
         "long_name": "West (Forest) - Eva (Photographer Cat) Quest Completion Item",
@@ -2009,8 +2009,8 @@
         "client_name_id": "Item_Camera",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 9.232,
+        "pos_y": -76.282
     },
     {
         "long_name": "West (Forest) - Gunther (Sidekick Hippo) Quest Completion NPC",
@@ -2020,8 +2020,8 @@
         "client_name_id": "NPC_Sidekick_Hippo",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 37.74939,
+        "pos_y": -20.60392
     },
     {
         "long_name": "West (Forest) - Trish (Invisible Horse) Quest Completion NPC",
@@ -2031,8 +2031,8 @@
         "client_name_id": "NPC_Invisible_Horse",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -57.81252,
+        "pos_y": -43.86141
     },
     {
         "long_name": "West (Forest) - Tiffany (Princess Cat) Quest Completion NPCs",
@@ -2042,8 +2042,8 @@
         "client_name_id": "NPC_TutuCat",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -17.451,
+        "pos_y": 62.946
     },
     {
         "long_name": "West (Forest) - Tiffany (Princess Cat) Quest Completion Item",
@@ -2053,8 +2053,8 @@
         "client_name_id": "Sword_Wand",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": -17.451,
+        "pos_y": 62.946
     },
     {
         "long_name": "Jill's Main Quest - Magic Ore Pickup (Susanne's Quest)",
@@ -2130,8 +2130,8 @@
         "client_name_id": "Item_Bomb",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 267.8625,
+        "pos_y": 73.81152
     },
     {
         "long_name": "North (Mountain) - Flint (BombBowl Mole) Quest Completion NPC",
@@ -2141,8 +2141,8 @@
         "client_name_id": "NPC_BombBowlMole",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 267.8625,
+        "pos_y": 73.81152
     },
     {
         "long_name": "North (Mountain) - Tanner (Pot Mimic Elk) Quest Completion NPC",
@@ -2152,8 +2152,8 @@
         "client_name_id": "NPC_Confused_Elk",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 246.0433,
+        "pos_y": 112.3151
     },
     {
         "long_name": "North (Mountain) - Twig (Flip Pomeranian) Quest Completion NPC",
@@ -2163,8 +2163,8 @@
         "client_name_id": "NPC_Pomeranian",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 147.7196,
+        "pos_y": 33.92229
     },
     {
         "long_name": "North (Mountain) - Neil (Peptalk Rat) Quest Completion NPC",
@@ -2174,8 +2174,8 @@
         "client_name_id": "NPC_Mistakes_Rat",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 183.307,
+        "pos_y": 133.464
     },
     {
         "long_name": "North (Mountain) - Neil (Peptalk Rat) Quest Completion Item",
@@ -2185,8 +2185,8 @@
         "client_name_id": "Hat_Beret",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 183.307,
+        "pos_y": 133.464
     },
     {
         "long_name": "North (Mountain) - Scooter (Ceramic-Allergy Cougar) Quest Completion NPC",
@@ -2196,8 +2196,8 @@
         "client_name_id": "NPC_ScaredPots_Cougar",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 179.9117,
+        "pos_y": 68.21929
     },
     {
         "long_name": "North (Mountain) - Luisa (Tripping Lizard) Quest Completion NPC",
@@ -2207,8 +2207,8 @@
         "client_name_id": "NPC_TripLizard",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 205.2861,
+        "pos_y": 32.9804
     },
     {
         "long_name": "North (Mountain) - Luisa (Tripping Lizard) Quest Completion Item",
@@ -2218,8 +2218,8 @@
         "client_name_id": "Sword_CBSpear",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 205.2861,
+        "pos_y": 32.9804
     },
     {
         "long_name": "Avery!'s Main Quest - Nerf Blaster (Andromeda's Quest)",
@@ -2306,8 +2306,8 @@
         "client_name_id": "NPC_Directions_Deer",
         "region": "Main Island",
         "location_group": "",
-        "pos_x": 0,
-        "pos_y": 0
+        "pos_x": 105.3186,
+        "pos_y": -4.882381
     },
     {
         "long_name": "Main Island - Billy (Whale) Quest Completion NPC",

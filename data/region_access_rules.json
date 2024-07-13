@@ -1,0 +1,29 @@
+{
+    "Menu": [
+        ""
+    ],
+    "Tutorial Island": [
+        ""
+    ],
+    "Tutorial Island Breakables": [
+        "cardboard_destroyer"
+    ],
+    "Tutorial Island Races": [
+        ""
+    ],
+    "Main Island": [
+        "can_clear_tutorial"
+    ],
+    "Main Island Races": [
+        ""
+    ],
+    "Main Island Breakables": [
+        "cardboard_destroyer"
+    ],
+    "Main Island Mountain Breakables": [
+        "bracelet"
+    ],
+    "Junk 4 Trash": [
+        "cardboard_destroyer"
+    ]
+}
