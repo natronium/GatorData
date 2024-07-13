@@ -1,0 +1,418 @@
+[
+    {
+        "client_name_id" : "Hat_Basic",
+        "position_name" : "Tut_Frog"
+    },
+    {
+        "client_name_id" : "Shirt",
+        "position_name" : "Tut_Frog"
+    },
+    {
+        "client_name_id" : "Sword_Stick",
+        "position_name" : "Sword_Pickup"
+    },
+    {
+        "client_name_id" : "POT?",
+        "position_name" : "Tut_Horse"
+    },
+    {
+        "client_name_id" : "Shield_PotLid",
+        "position_name" : "Tut_Horse"
+    },
+    {
+        "client_name_id" : "NPC_TutIsland_Bear",
+        "position_name" : "simon"
+    },
+    {
+        "client_name_id" : "Item_Ragdoll",
+        "position_name" : "simon"
+    },
+    {
+        "client_name_id" : "NPC_TutIsland_Duck",
+        "position_name" : "franny"
+    },
+    {
+        "client_name_id" : "Sword_Wood",
+        "position_name" : "franny"
+    },
+    {
+        "client_name_id" : "NPC_TutIsland_Giraffe",
+        "position_name" : "gerald"
+    },
+    {
+        "client_name_id" : "Hat_Slime",
+        "position_name" : "gerald"
+    },
+    {
+        "client_name_id" : "NPC_Balloon_Owl",
+        "position_name" : "darcie"
+    },
+    {
+        "client_name_id" : "Item_Balloon",
+        "position_name" : "darcie"
+    },
+    {
+        "client_name_id" : "BROKEN WHEELIE THINGY",
+        "position_name" : "scooter_pickup"
+    },
+    {
+        "client_name_id" : "NPC_FetchVulture",
+        "position_name" : "kasen"
+    },
+    {
+        "client_name_id" : "Shield_ScooterBoardBlue",
+        "position_name" : "kasen"
+    },
+    {
+        "client_name_id" : "NPC_SurfOpossum",
+        "position_name" : "ssumantha"
+    },
+    {
+        "client_name_id" : "Shield_Tube",
+        "position_name" : "ssumantha"
+    },
+    {
+        "client_name_id" : "NPC_ScaredOfHeightsBear",
+        "position_name" : "mochi"
+    },
+    {
+        "client_name_id" : "NPC_Chess_Eagle",
+        "position_name" : "Tony"
+    },
+    {
+        "client_name_id" : "Shield_Chessboard",
+        "position_name" : "Tony"
+    },
+    {
+        "client_name_id" : "Thrown_Pencil_1",
+        "position_name" : "sam"
+    },
+    {
+        "client_name_id" : "Thrown_Pencil_2",
+        "position_name" : "sam"
+    },
+    {
+        "client_name_id" : "Thrown_Pencil_3",
+        "position_name" : "sam"
+    },
+    {
+        "client_name_id" : "NPC_Clumsy_Jackal",
+        "position_name" : "sam"
+    },
+    {
+        "client_name_id" : "Sword_Pencil",
+        "position_name" : "sam"
+    },
+    {
+        "client_name_id" : "NPC_Destroy_Elephant",
+        "position_name" : "viraj"
+    },
+    {
+        "client_name_id" : "NPC_Old_Man_Sloth",
+        "position_name" : "Mr. Doddler"
+    },
+    {
+        "client_name_id" : "Item_Gum",
+        "position_name" : "Mr. Doddler"
+    },
+    {
+        "client_name_id" : "NPC_SwimBull",
+        "position_name" : "cade"
+    },
+    {
+        "client_name_id" : "NPC_Skate_Pug",
+        "position_name" : "skate pug"
+    },
+    {
+        "client_name_id" : "Shield_Skateboard",
+        "position_name" : "skate pug"
+    },
+    {
+        "client_name_id" : "NPC_WannaBeHawk",
+        "position_name" : "joe"
+    },
+    {
+        "client_name_id" : "NPC_AwkwardFriendly",
+        "position_name" : "madeline"
+    },
+    {
+        "client_name_id" : "NPC_Rescue_Robin",
+        "position_name" : "robin"
+    },
+    {
+        "client_name_id" : "Shield_Palette",
+        "position_name" : "robin"
+    },
+    {
+        "client_name_id" : "QuestItem_Retainer",
+        "position_name" : "retainer"
+    },
+    {
+        "client_name_id" : "NPC_Fetch_Shark",
+        "position_name" : "becca"
+    },
+    {
+        "client_name_id" : "Shield_Martin",
+        "position_name" : "lucas"
+    },
+    {
+        "client_name_id" : "CLIPPINGS",
+        "position_name" : "jada"
+    },
+    {
+        "client_name_id" : "BUCKET",
+        "position_name" : "jada"
+    },
+    {
+        "client_name_id" : "WATER",
+        "position_name" : "jada"
+    },
+    {
+        "client_name_id" : "Shield_Leaf",
+        "position_name" : "jada"
+    },
+    {
+        "client_name_id" : "Hat_DetectiveCowl",
+        "position_name" : "duke"
+    },
+    {
+        "client_name_id" : "NPC_Tut_Horse",
+        "position_name" : "martin"
+    },
+    {
+        "client_name_id" : "Item_StickyHand",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "Shield_Stretch",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "Shield_TrashCanLid",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "Sword_Wrench",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "Item_PaintGun",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "Sword_Grabby",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "NPC_TrashPanda",
+        "position_name" : "Roy"
+    },
+    {
+        "client_name_id" : "NPC_Destroy_Rabbit",
+        "position_name" : "leeland"
+    },
+    {
+        "client_name_id" : "Sword_Paintbrush",
+        "position_name" : "leeland"
+    },
+    {
+        "client_name_id" : "NPC_Ninja_Crane",
+        "position_name" : "sierra"
+    },
+    {
+        "client_name_id" : "Item_Shuriken",
+        "position_name" : "sierra"
+    },
+    {
+        "client_name_id" : "Sword_Nunchucks",
+        "position_name" : "romeo"
+    },
+    {
+        "client_name_id" : "NPC_Ninja_Anteater",
+        "position_name" : "romeo"
+    },
+    {
+        "client_name_id" : "Hat_Ninja",
+        "position_name" : "romeo"
+    },
+    {
+        "client_name_id" : "NPC_Obstacle_Ostrich",
+        "position_name" : "pepperoni"
+    },
+    {
+        "client_name_id" : "Hat_SkateHelmet",
+        "position_name" : "pepperoni"
+    },
+    {
+        "client_name_id" : "NPC_LunchSwapSkink",
+        "position_name" : "beeritney"
+    },
+    {
+        "client_name_id" : "Hat_Princess",
+        "position_name" : "beeritney"
+    },
+    {
+        "client_name_id" : "NPC_Pot_Armadillo",
+        "position_name" : "pot kid"
+    },
+    {
+        "client_name_id" : "NPC_Warrior_Beaver",
+        "position_name" : "penelope"
+    },
+    {
+        "client_name_id" : "Shield_TowerShield",
+        "position_name" : "penelope"
+    },
+    {
+        "client_name_id" : "NPC_Shy_Cat",
+        "position_name" : "eva"
+    },
+    {
+        "client_name_id" : "Item_Camera",
+        "position_name" : "eva"
+    },
+    {
+        "client_name_id" : "NPC_Sidekick_Hippo",
+        "position_name" : "gunther"
+    },
+    {
+        "client_name_id" : "NPC_Invisible_Horse",
+        "position_name" : "trish"
+    },
+    {
+        "client_name_id" : "NPC_TutuCat",
+        "position_name" : "tiffany"
+    },
+    {
+        "client_name_id" : "Sword_Wand",
+        "position_name" : "tiffany"
+    },
+    {
+        "client_name_id" : "BEACH ROCK",
+        "position_name" : "susanne"
+    },
+    {
+        "client_name_id" : "Sword_RockHammer",
+        "position_name" : "susanne"
+    },
+    {
+        "client_name_id" : "HALF A CHEESE SANDWICH",
+        "position_name" : "gene"
+    },
+    {
+        "client_name_id" : "Shield_Platter",
+        "position_name" : "gene"
+    },
+    {
+        "client_name_id" : "Sword_Net",
+        "position_name" : "antone"
+    },
+    {
+        "client_name_id" : "NPC_Tut_Dog",
+        "position_name" : "jill"
+    },
+    {
+        "client_name_id" : "Item_Bomb",
+        "position_name" : "flint"
+    },
+    {
+        "client_name_id" : "NPC_BombBowlMole",
+        "position_name" : "flint"
+    },
+    {
+        "client_name_id" : "NPC_Confused_Elk",
+        "position_name" : "tanner"
+    },
+    {
+        "client_name_id" : "NPC_Pomeranian",
+        "position_name" : "twig"
+    },
+    {
+        "client_name_id" : "NPC_Mistakes_Rat",
+        "position_name" : "neil"
+    },
+    {
+        "client_name_id" : "Hat_Beret",
+        "position_name" : "neil"
+    },
+    {
+        "client_name_id" : "NPC_ScaredPots_Cougar",
+        "position_name" : "scooter"
+    },
+    {
+        "client_name_id" : "NPC_TripLizard",
+        "position_name" : "luisa"
+    },
+    {
+        "client_name_id" : "Sword_CBSpear",
+        "position_name" : "luisa"
+    },
+    {
+        "client_name_id" : "Item_SpaceGun",
+        "position_name" : "andromeda"
+    },
+    {
+        "client_name_id" : "Sword_Laser",
+        "position_name" : "andromeda"
+    },
+    {
+        "client_name_id" : "Hat_Western",
+        "position_name" : "velma"
+    },
+    {
+        "client_name_id" : "ICE CREAM",
+        "position_name" : "esme"
+    },
+    {
+        "client_name_id" : "Hat_Vampire",
+        "position_name" : "esme"
+    },
+    {
+        "client_name_id" : "NPC_Part-Timer",
+        "position_name" : "esme"
+    },
+    {
+        "client_name_id" : "NPC_Tut_Frog",
+        "position_name" : "avery"
+    },
+    {
+        "client_name_id" : "NPC_Directions_Deer",
+        "position_name" : "esther"
+    },
+    {
+        "client_name_id" : "NPC_BigWhale",
+        "position_name" : "billy_1"
+    },
+    {
+        "client_name_id" : "Hat_Space",
+        "position_name" : "billy_1"
+    },
+    {
+        "client_name_id" : "Rock",
+        "position_name" : "zhu_1"
+    },
+    {
+        "client_name_id" : "NPC_Rock_Fox",
+        "position_name" : "zhu_1"
+    },
+    {
+        "client_name_id" : "BraceletShop2",
+        "position_name" : "Monkey_tutorial"
+    },
+    {
+        "client_name_id" : "BraceletShop1",
+        "position_name" : "Monkey_windmill"
+    },
+    {
+        "client_name_id" : "BraceletShop0",
+        "position_name" : "Monkey_tree"
+    },
+    {
+        "client_name_id" : "BraceletShop3",
+        "position_name" : "Monkey_mountain"
+    },
+    {
+        "client_name_id" : "NPC_BraceletMonkey",
+        "position_name" : "Monkey_all"
+    }
+]
