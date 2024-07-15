@@ -1,9 +1,9 @@
 {
-    "Hat_Basic": "Tut_Frog",
-    "Shirt": "Tut_Frog",
+    "Hat_Basic": "tutorial_avery",
+    "Shirt": "tutorial_avery",
     "Sword_Stick": "Sword_Pickup",
-    "POT?": "Tut_Horse",
-    "Shield_PotLid": "Tut_Horse",
+    "POT?": "tutorial_martin",
+    "Shield_PotLid": "tutorial_martin",
     "NPC_TutIsland_Bear": "simon",
     "Item_Ragdoll": "simon",
     "NPC_TutIsland_Duck": "franny",
@@ -94,13 +94,13 @@
     "NPC_Part-Timer": "esme",
     "NPC_Tut_Frog": "avery",
     "NPC_Directions_Deer": "esther",
-    "NPC_BigWhale": "billy_1",
-    "Hat_Space": "billy_1",
-    "Rock": "zhu_1",
-    "NPC_Rock_Fox": "zhu_1",
+    "NPC_BigWhale": "billy",
+    "Hat_Space": "billy",
+    "Rock": "zhu",
+    "NPC_Rock_Fox": "zhu",
     "BraceletShop2": "Monkey_tutorial",
     "BraceletShop1": "Monkey_windmill",
     "BraceletShop0": "Monkey_tree",
     "BraceletShop3": "Monkey_mountain",
-    "NPC_BraceletMonkey": "Monkey_all"
+    "NPC_BraceletMonkey": "Monkey_windmill"
 }

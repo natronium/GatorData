@@ -3,6 +3,7 @@
 import csv
 import json
 
+import os
 from typing import Any, Dict, NamedTuple, Set, List, Tuple
 
 
@@ -196,7 +197,7 @@ def construct_section(location: GatorLocationData) -> Section:
         client_name_id=location.client_name_id,
         location_group=location.location_group,
         access_rules=location.access_rules,
-    )
+    )._asdict()
 
 
 def construct_sectioned_locations(
@@ -210,15 +211,34 @@ def construct_sectioned_locations(
             for _, gator_loc in gator_location_table.items()
             if gator_loc.pos == location_pos
         ]
+        section_names = [location.long_name for location in locations]
+        common_prefix = os.path.commonprefix(section_names)
+        if common_prefix != "":
+            parts = common_prefix.partition(" - ")
+            if location_pos == (5.362534, 154.2351):
+                namey_name = "Junk 4 Trash"
+            elif location_pos == (267.8625, 73.81152):
+                namey_name = "Flint (BombBowl Mole)"
+            elif location_pos == (-56.216, 220.591):
+                namey_name = "Sam (Pencil Jackal)"
+            elif location_pos == (-78.2, -106.54):
+                namey_name = "Ninja Clan"
+            else:
+                namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC")
+        else:
+            namey_name = str(location_pos)
+        if namey_name == "":
+            namey_name = str(location_pos)
+        
         location_data_table[location_pos] = LocationData(
-            name=str(location_pos),
+            name=namey_name,
             region=locations[0].region,
             access_rules=[],
             map_locations=[
-                MapLocation(map="the_island", x=location_pos[0], y=location_pos[1])
+                MapLocation(map="the_island", x=location_pos[0], y=location_pos[1])._asdict()
             ],
             sections=[construct_section(location) for location in locations],
-        )
+        )._asdict()
     return location_data_table
 
 
@@ -233,13 +253,13 @@ def define_region(
         children=[
             location_data
             for (_, location_data) in sectioned_location_table.items()
-            if location_data.region == region_name
+            if location_data["region"] == region_name
         ]
         + [
             define_region(child_name, region_access_rules, sectioned_location_table)
             for child_name in gator_regions[region_name]
         ],
-    )
+    )._asdict()
 
 
 class NamedTupleEncoder(json.JSONEncoder):
@@ -256,15 +276,9 @@ def export_json():
         region_access_rules=region_access_rules,
         sectioned_location_table=construct_sectioned_locations(load_location_csv()),
     )
-    # locations: GatorLocationTable = load_location_csv()
-    # location_array = []
-    # for _, location in locations.items():
-    #     location_array.append(location._asdict())
-
-    testval = Section("nameval", 123, 456, "client_name_val", "loc_group_val", ["access 1", "access 2"])
 
     with open("locations_raw.json", "w") as file:
-        json.dump(testval, file, indent=4, cls=NamedTupleEncoder)
+        json.dump(regions, file, indent=4, cls=NamedTupleEncoder)
 
 
 region_access_rules: Dict[str, List[str]] = load_region_access_rules()
