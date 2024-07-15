@@ -3,7 +3,7 @@
 import csv
 import json
 
-from typing import Dict, NamedTuple, Set, List, Tuple
+from typing import Any, Dict, NamedTuple, Set, List, Tuple
 
 
 class MapLocation(NamedTuple):
@@ -30,6 +30,7 @@ class GatorLocationData(NamedTuple):
     region: str
     location_group: str
     pos: Tuple[int, int]
+    access_rules: List[str]
 
 
 class LocationData(NamedTuple):
@@ -99,6 +100,11 @@ def load_region_access_rules() -> Dict[str, List[str]]:
         return json.load(file)
 
 
+def load_location_access_rules() -> Dict[str, List[str]]:
+    with open("data/location_access_rules.json") as file:
+        return json.load(file)
+
+
 def load_potracechest_positions() -> PotRaceChestPositionTable:
     positions: PotRaceChestPositionTable = PotRaceChestPositionTable()
     with open("data/pot_chest_race_positions.json") as file:
@@ -136,13 +142,14 @@ def load_location_csv() -> GatorLocationTable:
 
     locations: GatorLocationTable = GatorLocationTable()
     with open("data/location_lookup.csv") as file:
-        item_reader = csv.DictReader(file)
+        location_reader = csv.DictReader(file)
         potchestrace_positions: PotRaceChestPositionTable = (
             load_potracechest_positions()
         )
         npc_positions: NPCPositionTable = load_npc_positions()
         npc_lookup: Dict[str, str] = load_npc_lookup()
-        for location in item_reader:
+        location_access_rules: Dict[str, List[str]] = load_location_access_rules()
+        for location in location_reader:
             id: int | None = (
                 int(location["ap_location_id"]) if location["ap_location_id"] else None
             )
@@ -163,6 +170,10 @@ def load_location_csv() -> GatorLocationTable:
                     # Temporary until NPC positions for main/tutorial/multiple
                     pos_x: float = 0
                     pos_y: float = 0
+            try:
+                access_rules = location_access_rules[location["shortname"]]
+            except KeyError:
+                access_rules = []
             locations[location["longname"]] = GatorLocationData(
                 long_name=location["longname"],
                 short_name=location["shortname"],
@@ -172,6 +183,7 @@ def load_location_csv() -> GatorLocationTable:
                 region=location["ap_region"],
                 location_group=location["ap_location_group"],
                 pos=(pos_x, pos_y),
+                access_rules=access_rules,
             )
     return locations
 
@@ -183,7 +195,7 @@ def construct_section(location: GatorLocationData) -> Section:
         client_id=location.client_id,
         client_name_id=location.client_name_id,
         location_group=location.location_group,
-        access_rules=[],
+        access_rules=location.access_rules,
     )
 
 
@@ -207,52 +219,79 @@ def construct_sectioned_locations(
             ],
             sections=[construct_section(location) for location in locations],
         )
+    return location_data_table
 
 
-def define_region(region_name, region_access_rules, location_table: LocationDataTable):
+def define_region(
+    region_name: str,
+    region_access_rules: Dict[str, List[str]],
+    sectioned_location_table: LocationDataTable,
+) -> RegionData:
     return RegionData(
         name=region_name,
         access_rules=region_access_rules[region_name],
         children=[
             location_data
-            for (_, location_data) in location_table.items()
+            for (_, location_data) in sectioned_location_table.items()
             if location_data.region == region_name
         ]
         + [
-            define_region(child_name, region_access_rules, location_table)
+            define_region(child_name, region_access_rules, sectioned_location_table)
             for child_name in gator_regions[region_name]
         ],
     )
 
 
+class NamedTupleEncoder(json.JSONEncoder):
+    def default(self, o: Any) -> Any:
+        if isinstance(o, NamedTuple):
+            return super().default(o._asdict())
+        return super().default(o)
+
 def export_json():
-    locations: GatorLocationTable = load_location_csv()
-    location_array = []
-    for _, location in locations.items():
-        location_array.append(location._asdict())
+    starting_region = "Tutorial Island"
+    region_access_rules = load_region_access_rules()
+    regions = define_region(
+        region_name=starting_region,
+        region_access_rules=region_access_rules,
+        sectioned_location_table=construct_sectioned_locations(load_location_csv()),
+    )
+    # locations: GatorLocationTable = load_location_csv()
+    # location_array = []
+    # for _, location in locations.items():
+    #     location_array.append(location._asdict())
+
+    testval = Section("nameval", 123, 456, "client_name_val", "loc_group_val", ["access 1", "access 2"])
 
     with open("locations_raw.json", "w") as file:
-        json.dump(location_array, file, indent=4)
+        json.dump(testval, file, indent=4, cls=NamedTupleEncoder)
 
 
 region_access_rules: Dict[str, List[str]] = load_region_access_rules()
 gator_regions: Dict[str, Set[str]] = {
     "Menu": {"Tutorial Island"},
     "Tutorial Island": {
-        "Main Island",
+        "Big Island",
         "Tutorial Island Races",
         "Tutorial Island Breakables",
+        "Pots Shootable from Tutorial Island",
     },
+    "Pots Shootable from Tutorial Island": set(),
     "Tutorial Island Races": set(),
     "Tutorial Island Breakables": set(),
-    "Main Island": {"Main Island Races", "Main Island Breakables", "Junk 4 Trash"},
-    "Main Island Races": set(),
-    "Main Island Breakables": {"Main Island Mountain Breakables"},
-    "Main Island Mountain Breakables": set(),
+    "Big Island": {
+        "Big Island Races",
+        "Big Island Breakables",
+        "Mountain",
+        "Junk 4 Trash",
+        "Big Island Bracelet Shops",
+    },
+    "Big Island Races": set(),
+    "Big Island Breakables": set(),
+    "Mountain": {"Mountain Breakables"},
+    "Mountain Breakables": set(),  # Intentionally omitting connection to Pots Shootable because avoiding loop, dealt with via access rules
     "Junk 4 Trash": set(),
+    "Big Island Bracelet Shops": set(),
 }
-
-# menu_region : RegionData = RegionData(name = "Menu", access_rules = )
-
 
 export_json()

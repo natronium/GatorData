@@ -1,5 +1,357 @@
-[
 {
-
+    "ti_martin_quest_item": [
+        "pot_q"
+    ],
+    "ti_avery_quest_item": [
+        "starter_hat, cardboard_destroyer"
+    ],
+    "ti_franny_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "ti_franny_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "ti_gerald_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "ti_gerald_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "ti_bracelet_tutorial": [
+        "cardboard_destroyer"
+    ],
+    "nec_darcie_quest_npc": [
+        "ranged"
+    ],
+    "nec_darcie_quest_item": [
+        "ranged"
+    ],
+    "nec_kasen_quest_npc": [
+        "broken_scooter"
+    ],
+    "nec_kasen_quest_item": [
+        "broken_scooter"
+    ],
+    "nec_ssumantha_quest_npc": [
+        "shield"
+    ],
+    "nec_ssumantha_quest_item": [
+        "shield"
+    ],
+    "seb_tony_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "seb_tony_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "seb_sam_thrown_pencil_2": [
+        "thrown_pencil_1"
+    ],
+    "seb_sam_thrown_pencil_3": [
+        "thrown_pencil_2"
+    ],
+    "seb_sam_quest_npc": [
+        "thrown_pencil_3"
+    ],
+    "seb_sam_quest_item": [
+        "thrown_pencil_3"
+    ],
+    "seb_doddler_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "seb_doddler_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "seb_viraj_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "seb_skatepug_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "seb_skatepug_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "ec_becca_quest_npc": [
+        "retainer"
+    ],
+    "ec_robin_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "ec_robin_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "mmq_jada_clippings": [
+        "sword"
+    ],
+    "mmq_jada_bucket": [
+        "sword,clippings"
+    ],
+    "mmq_jada_water": [
+        "sword,clippings,bucket"
+    ],
+    "mmq_jada_quest_item": [
+        "sword,clippings,bucket,water"
+    ],
+    "mmq_martin_quest_npc": [
+        "sword,clippings,bucket,water"
+    ],
+    "sj_leeland_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "sj_leeland_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "wf_sierra_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "wf_sierra_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "wf_romeo_item": [
+        "cardboard_destroyer"
+    ],
+    "wf_ninjaclan_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "wf_ninjaclan_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "wf_pepperoni_quest_npc": [
+        "cardboard_destroyer,bracelet"
+    ],
+    "wf_pepperoni_quest_item": [
+        "cardboard_destroyer,bracelet"
+    ],
+    "wf_potkid_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "wf_penelope_quest_npc": [
+        "ranged",
+        "hard,cardboard_destroyer"
+    ],
+    "wf_penelope_quest_item": [
+        "ranged",
+        "hard,cardboard_destroyer"
+    ],
+    "wf_eva_quest_npc": [
+        "bracelet"
+    ],
+    "wf_eva_quest_item": [
+        "bracelet"
+    ],
+    "wf_tiffany_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "wf_tiffany_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "jmq_susanne_quest_item": [
+        "ore,ranged",
+        "ore,sword"
+    ],
+    "jmq_gene_sandwich": [
+        "cardboard_destroyer"
+    ],
+    "jmq_gene_quest_item": [
+        "cardboard_destroyer,sandwich"
+    ],
+    "jmq_jill_quest_npc": [
+        "bug_net,cardboard_destroyer,sandwich,ore"
+    ],
+    "nm_flint_quest_npc": [
+        "ranged",
+        "bomb"
+    ],
+    "nm_tanner_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "nm_twig_quest_npc": [
+        "shield"
+    ],
+    "nm_neil_quest_npc": [
+        "cardboard_destroyer"
+    ],
+    "nm_neil_quest_item": [
+        "cardboard_destroyer"
+    ],
+    "nm_scooter_quest_npc": [
+        "bracelet,cardboard_destroyer",
+        "ranged"
+    ],
+    "amq_andromeda_blaster": [
+        "cardboard_destroyer"
+    ],
+    "amq_andromeda_quest_item": [
+        "ranged",
+        "hard,cardboard_destroyer"
+    ],
+    "amq_esme_fangs": [
+        "sorbet"
+    ],
+    "amq_avery_quest_npc": [
+        "sorbet,ranged",
+        "hard,sorbet,cardboard_destroyer"
+    ],
+    "mi_zhu_quest_npc": [
+        "rock"
+    ],
+    "nm_pot_B4_693": [
+        "ranged",
+        "bracelet"
+    ],
+    "nm_pot_B4_695": [
+        "ranged",
+        "bracelet"
+    ],
+    "nm_pot_C4_80": [
+        "ranged",
+        "bracelet"
+    ],
+    "nm_pot_C4_88": [
+        "ranged",
+        "bracelet"
+    ],
+    "nm_pot_C4_101": [
+        "ranged",
+        "bracelet"
+    ],
+    "nm_pot_C4_1625": [
+        "ranged",
+        "bracelet"
+    ],
+    "nm_pot_C5_1662": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_pot_B1_425": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_pot_B2_427": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_chest_B1_433": [
+        "bracelet"
+    ],
+    "nwt_pot_B1_407": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_pot_B1_412": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_pot_C2_372": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_chest_D1_184": [
+        "ranged",
+        "bracelet"
+    ],
+    "nwt_race_C2_392": [
+        "shield"
+    ],
+    "nwt_race_C2_383": [
+        "shield"
+    ],
+    "nec_race_B6_814": [
+        "shield"
+    ],
+    "nec_pot_B8_2071": [
+        "ranged",
+        "bracelet_2"
+    ],
+    "nm_race_C4_304": [
+        "shield,bracelet"
+    ],
+    "nm_race_D5_1746": [
+        "bracelet"
+    ],
+    "nm_pot_D3_1195": [
+        "ranged",
+        "bracelet"
+    ],
+    "nec_race_C7_754": [
+        "shield"
+    ],
+    "nec_pot_D7_1363": [
+        "ranged",
+        "bracelet",
+        "glider",
+        "shield_jump"
+    ],
+    "nec_pot_D7_1364": [
+        "ranged",
+        "bracelet",
+        "glider",
+        "shield_jump"
+    ],
+    "nec_pot_D8_1362": [
+        "ranged",
+        "bracelet"
+    ],
+    "nec_chest_D8_1361": [
+        "ranged",
+        "bracelet"
+    ],
+    "cr_pot_E4_2075": [
+        "ranged",
+        "bracelet"
+    ],
+    "cr_pot_F4_2074": [
+        "ranged",
+        "bracelet"
+    ],
+    "ec_pot_F9_652": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_race_G0_73": [
+        "shield"
+    ],
+    "wf_pot_G4_1542": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_pot_G4_1543": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_chest_H4_1519": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_pot_H4_1521": [
+        "ranged",
+        "bracelet"
+    ],
+    "ec_chest_H5_767": [
+        "ranged"
+    ],
+    "ec_pot_H5_722": [
+        "ranged",
+        "bracelet"
+    ],
+    "ec_pot_H5_723": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_pot_H4_1518": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_pot_J2_1584": [
+        "ranged",
+        "bracelet"
+    ],
+    "seb_pot_J6_102": [
+        "ranged",
+        "bracelet"
+    ],
+    "wf_pot_H4_1533": [
+        "ranged",
+        "bracelet"
+    ]
 }
-]
