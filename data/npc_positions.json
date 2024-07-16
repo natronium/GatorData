@@ -430,5 +430,224 @@
         ],
         "name": "pot kid",
         "internal_name": "sleeping in pot hook"
+    },
+    {
+        "pos": [
+            179.354,
+            -104.408
+        ],
+        "name": "tutorial_Jill",
+        "internal_name": "Jill"
+    },
+    {
+        "pos": [
+            263.989,
+            -90.701
+        ],
+        "name": "tutorial_avery",
+        "internal_name": "Avery"
+    },
+    {
+        "pos": [
+            215.9178,
+            -17.3945
+        ],
+        "name": "tutorial_martin",
+        "internal_name": "Horse"
+    },
+    {
+        "pos": [
+            70.61537,
+            205.6325
+        ],
+        "name": "martin",
+        "internal_name": "Martin"
+    },
+    {
+        "pos": [
+            -98.79021,
+            235.24
+        ],
+        "name": "lucas",
+        "internal_name": "Coolkid Wolf"
+    },
+    {
+        "pos": [
+            102.2629,
+            249.3436
+        ],
+        "name": "jada",
+        "internal_name": "Coolkid Boar"
+    },
+    {
+        "pos": [
+            16.621,
+            278.1437
+        ],
+        "name": "duke",
+        "internal_name": "Coolkid Goose"
+    },
+    {
+        "pos": [
+            -11.64,
+            -41
+        ],
+        "name": "Susanne",
+        "internal_name": "Engineer"
+    },
+    {
+        "pos": [
+            2.5,
+            -45.33
+        ],
+        "name": "Gene",
+        "internal_name": "Gene (Economist)"
+    },
+    {
+        "pos": [
+            0.174,
+            -44.439
+        ],
+        "name": "Antone",
+        "internal_name": "Entomologist"
+    },
+    {
+        "pos": [
+            -2.287,
+            -30.94
+        ],
+        "name": "Jill",
+        "internal_name": "Jill"
+    },
+    {
+        "pos": [
+            148.17,
+            102.75
+        ],
+        "name": "andromeda",
+        "internal_name": "HawkSpace"
+    },
+    {
+        "pos": [
+            220.0135,
+            51.29852
+        ],
+        "name": "velma",
+        "internal_name": "Cowboy"
+    },
+    {
+        "pos": [
+            185.7675,
+            158.2035
+        ],
+        "name": "esme",
+        "internal_name": "Vampire Bat"
+    },
+    {
+        "pos": [
+            173.6371,
+            188.6502
+        ],
+        "name": "Part-Timer",
+        "internal_name": "PartTimer"
+    },
+    {
+        "pos": [
+            174.7885,
+            108.2285
+        ],
+        "name": "avery!",
+        "internal_name": "Avery"
+    },
+    {
+        "pos": [
+            208.4,
+            -122.761
+        ],
+        "name": "Stick Pickup"
+    },
+    {
+        "pos": [
+            182.789,
+            -22.993
+        ],
+        "name": "Pot? Pickup"
+    },
+    {
+        "pos": [
+            32.89179,
+            -83.64698
+        ],
+        "name": "Cheese Sandwich Monsters"
+    },
+    {
+        "pos": [
+            202.87,
+            231.98
+        ],
+        "name": "Broken Scooter"
+    },
+    {
+        "pos": [
+            -10.27,
+            259.12
+        ],
+        "name": "Shark Retainer"
+    },
+    {
+        "pos": [
+            21.059,
+            -136.698
+        ],
+        "name": "Special Rock #0"
+    },
+    {
+        "pos": [
+            -6.062,
+            -116.619
+        ],
+        "name": "Special Rock #1"
+    },
+    {
+        "pos": [
+            92.52,
+            -34.8
+        ],
+        "name": "Special Rock #2"
+    },
+    {
+        "pos": [
+            -101.754,
+            -136.464
+        ],
+        "name": "Special Rock #3"
+    },
+    {
+        "pos": [
+            91.8,
+            -85.63
+        ],
+        "name": "Special Rock #4"
+    },
+    {
+        "pos": [
+            170.006,
+            -35.979
+        ],
+        "name": "Special Rock #5"
+    },
+    {
+        "pos": [
+            146.084,
+            282.135
+        ],
+        "name": "Special Rock #6"
+    },
+    {
+        "pos": [
+            -20.742,
+            254.17
+        ],
+        "name": "Special Rock #7"
     }
 ]

@@ -6,12 +6,22 @@ import json
 import os
 from typing import Any, Dict, NamedTuple, Set, List, Tuple
 
+map_image_side_length_px = 2048
 
 class MapLocation(NamedTuple):
     map: str
     x: int
     y: int
 
+def pos_x_to_map_y(pos_x: float) -> int:
+    map_y = ((pos_x + 165))/480*map_image_side_length_px
+    # return 512
+    return round(map_y)
+
+def pos_y_to_map_x(pos_y: float) -> int:
+    map_x = (480-(pos_y + 165))/480*map_image_side_length_px
+    # return 512
+    return round(map_x)
 
 class Section(NamedTuple):
     name: str
@@ -224,7 +234,7 @@ def construct_sectioned_locations(
             elif location_pos == (-78.2, -106.54):
                 namey_name = "Ninja Clan"
             else:
-                namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC")
+                namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC").removesuffix(" Quest Completion")
         else:
             namey_name = str(location_pos)
         if namey_name == "":
@@ -235,7 +245,7 @@ def construct_sectioned_locations(
             region=locations[0].region,
             access_rules=[],
             map_locations=[
-                MapLocation(map="the_island", x=location_pos[0], y=location_pos[1])._asdict()
+                MapLocation(map="the_island", x=pos_x_to_map_y(location_pos[1]), y=pos_y_to_map_x(location_pos[0]))._asdict()
             ],
             sections=[construct_section(location) for location in locations],
         )._asdict()
