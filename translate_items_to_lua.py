@@ -1,6 +1,7 @@
 import csv
 import enum
-from typing import Dict, NamedTuple, Set
+import json
+from typing import Any, Dict, NamedTuple, Set
 
 class ItemGroup(enum.Enum):
     Friends = enum.auto()
@@ -53,30 +54,30 @@ def load_item_csv() -> GatorItemTable:
             groups = {ItemGroup[group] for group in item["ap_item_groups"].split(",") if group}
             if is_destroyer(groups):
                 groups.add(ItemGroup["Cardboard_Destroyer"])
-            items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, classification, quantity, groups)
+            items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, classification, quantity, groups)._asdict()
     return items
 
 def get_item_code(item: GatorItemData) -> str:
-    if item.item_groups.issuperset({ItemGroup["Sword"]}):
+    if item["item_groups"].issuperset({ItemGroup["Sword"]}):
         return "sword"
-    if item.item_groups.issuperset({ItemGroup["Shield"]}):
+    if item["item_groups"].issuperset({ItemGroup["Shield"]}):
         return "shield"
-    if item.item_groups.issuperset({ItemGroup["Ranged"]}):
+    if item["item_groups"].issuperset({ItemGroup["Ranged"]}):
         return "ranged"
-    if item.short_name == "bowling_bomb":
+    if item["short_name"] == "bowling_bomb":
         return "bomb"
-    if item.short_name == "cheese_sandwich":
+    if item["short_name"] == "cheese_sandwich":
         return "sandwich"
-    if item.short_name == "thrown_pencil":
+    if item["short_name"] == "thrown_pencil":
         return "thrown_pencil_1"
-    return item.short_name
+    return item["short_name"]
     
 
 def convert_items_to_lua(items: GatorItemTable) -> str:
     lua_data = "ITEM_MAPPING = {\n"
     for _, data in items.items():
-        item_id = data.item_id
-        if data.classification != "filler":
+        item_id = data["item_id"]
+        if data["classification"] != "filler":
             item_code = get_item_code(data)
             if item_code != "bracelet" and item_code != "thrown_pencil_1":
                 item_type = "toggle"
@@ -94,4 +95,22 @@ def export_lua():
     with open("item_mapping.lua","w") as file:
         file.write(lua_data)
 
+class SetItemGroupEncoder(json.JSONEncoder):
+    def default(self, o: Any) -> Any:
+        if isinstance(o, Set):
+            string = ""
+            for itemgroup in o:
+                string += itemgroup.name
+                string += ","
+            return string.removesuffix(",")
+        return super().default(o)
+
+def export_json():
+
+    items = load_item_csv()
+
+    with open("items.json","w") as file:
+        json.dump([items], file, indent=4, cls=SetItemGroupEncoder)
+
 export_lua()
+export_json()
