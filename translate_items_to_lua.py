@@ -77,14 +77,13 @@ def convert_items_to_lua(items: GatorItemTable) -> str:
     lua_data = "ITEM_MAPPING = {\n"
     for _, data in items.items():
         item_id = data["item_id"]
-        if data["classification"] != "filler":
-            item_code = get_item_code(data)
-            if item_code != "bracelet" and item_code != "thrown_pencil_1":
-                item_type = "toggle"
-            else:
-                item_type = "progressive"
-
+        item_code = get_item_code(data)
+        if item_code != "bracelet" and item_code != "thrown_pencil_1":
+            item_type = "toggle"
+        else:
+            item_type = "progressive"
         lua_data += "    [" + str(item_id) + "] = {\"" + item_code +"\", \"" + item_type + "\"},\n"
+
     lua_data += "}"
     return lua_data
 
