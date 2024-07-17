@@ -234,7 +234,7 @@ def construct_sectioned_locations(
             elif location_pos == (-78.2, -106.54):
                 namey_name = "Ninja Clan"
             else:
-                namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC").removesuffix(" Quest Completion")
+                namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC").removesuffix(" Quest Completion").removesuffix(" ")
         else:
             namey_name = str(location_pos)
         if namey_name == "":
@@ -271,6 +271,40 @@ def define_region(
         ],
     )._asdict()
 
+def traverse(dic, path=None):
+    if not path:
+        path=""
+    if isinstance(dic,dict):
+        try:
+            name = dic["name"]
+            local_path = path + "/" + name
+            try:
+                sections = dic["sections"]
+                for section in sections:
+                    for b in traverse(section, local_path):
+                        yield b
+            except:
+                try:
+                    children = dic["children"]
+                    for child in children:
+                        for b in traverse(child, local_path):
+                            yield b
+                except (KeyError):
+                    yield local_path, dic
+        except (KeyError):
+            yield path, dic
+    else: 
+        yield path,dic
+    #https://stackoverflow.com/questions/11929904/traverse-a-nested-dictionary-and-get-the-path-in-python
+
+def convert_regions_to_lua(regions : RegionData) -> str:
+    lua_data = "LOCATION_MAPPING = {\n"
+    for x in traverse(regions):
+        location_id = x[1]["location_id"]
+        location_path = "@" + x[0].removeprefix("/")
+        lua_data += "    [" + str(location_id) + "] = {\"" + location_path + "\"},\n"
+    lua_data += "}"
+    return lua_data
 
 class NamedTupleEncoder(json.JSONEncoder):
     def default(self, o: Any) -> Any:
@@ -288,7 +322,21 @@ def export_json():
     )
 
     with open("locations_raw.json", "w") as file:
-        json.dump(regions, file, indent=4, cls=NamedTupleEncoder)
+        json.dump([regions], file, indent=4, cls=NamedTupleEncoder)
+
+def export_lua():
+    starting_region = "Tutorial Island"
+    region_access_rules = load_region_access_rules()
+    regions = define_region(
+        region_name=starting_region,
+        region_access_rules=region_access_rules,
+        sectioned_location_table=construct_sectioned_locations(load_location_csv()),
+    )
+
+    lua_data = convert_regions_to_lua(regions)
+
+    with open("location_mapping.lua","w") as file:
+        file.write(lua_data)
 
 
 region_access_rules: Dict[str, List[str]] = load_region_access_rules()
@@ -319,3 +367,4 @@ gator_regions: Dict[str, Set[str]] = {
 }
 
 export_json()
+export_lua()
