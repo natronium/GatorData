@@ -26,6 +26,7 @@ def pos_y_to_map_x(pos_y: float) -> int:
 class Section(NamedTuple):
     name: str
     location_id: int
+    region: str
     client_id: int
     client_name_id: str
     location_group: str
@@ -203,6 +204,7 @@ def construct_section(location: GatorLocationData) -> Section:
     return Section(
         name=location.long_name,
         location_id=location.location_id,
+        region=location.region,
         client_id=location.client_id,
         client_name_id=location.client_name_id,
         location_group=location.location_group,

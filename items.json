@@ -86,11 +86,11 @@
             "item_id": 100000011,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Craft,Quest_Item"
+            "item_groups": "Quest_Item,Craft"
         },
         "Cheese Sandwich": {
             "long_name": "Cheese Sandwich",
-            "short_name": "cheese_sandwich",
+            "short_name": "sandwich",
             "item_id": 100000012,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
@@ -158,7 +158,7 @@
             "item_id": 100000020,
             "classification": "filler",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Hat"
+            "item_groups": "Hat,Item"
         },
         "Plastic Fangs (Item)": {
             "long_name": "Plastic Fangs (Item)",
@@ -166,7 +166,7 @@
             "item_id": 100000021,
             "classification": "filler",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Hat"
+            "item_groups": "Hat,Item"
         },
         "Western Wide Brim (Item)": {
             "long_name": "Western Wide Brim (Item)",
@@ -174,7 +174,7 @@
             "item_id": 100000022,
             "classification": "filler",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Hat"
+            "item_groups": "Hat,Item"
         },
         "Bucket (Item)": {
             "long_name": "Bucket (Item)",
@@ -182,7 +182,7 @@
             "item_id": 100000023,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Hat"
+            "item_groups": "Hat,Item"
         },
         "Detective Cowl (Craft)": {
             "long_name": "Detective Cowl (Craft)",
@@ -222,7 +222,7 @@
             "item_id": 100000028,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Sword (Item)": {
             "long_name": "Sword (Item)",
@@ -230,7 +230,7 @@
             "item_id": 100000029,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Paintbrush (Craft)": {
             "long_name": "Paintbrush (Craft)",
@@ -254,7 +254,7 @@
             "item_id": 100000032,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Laser Sword (Craft)": {
             "long_name": "Laser Sword (Craft)",
@@ -270,7 +270,7 @@
             "item_id": 100000034,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Nunchaku (Item)": {
             "long_name": "Nunchaku (Item)",
@@ -278,7 +278,7 @@
             "item_id": 100000035,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Thrown Pencil": {
             "long_name": "Thrown Pencil",
@@ -302,7 +302,7 @@
             "item_id": 100000038,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Paleolithic Tool (Item)": {
             "long_name": "Paleolithic Tool (Item)",
@@ -310,7 +310,7 @@
             "item_id": 100000039,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Sword,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Sword,Item"
         },
         "Princess Wand (Craft)": {
             "long_name": "Princess Wand (Craft)",
@@ -326,7 +326,7 @@
             "item_id": 100000041,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Shield,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Shield,Item"
         },
         "Art Palette (Craft)": {
             "long_name": "Art Palette (Craft)",
@@ -350,7 +350,7 @@
             "item_id": 100000044,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Shield,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Shield,Item"
         },
         "Skateboard (Craft)": {
             "long_name": "Skateboard (Craft)",
@@ -366,7 +366,7 @@
             "item_id": 100000046,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Shield,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Shield,Item"
         },
         "Chessboard (Craft)": {
             "long_name": "Chessboard (Craft)",
@@ -382,7 +382,7 @@
             "item_id": 100000048,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Shield,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Shield,Item"
         },
         "Trampoline (Item)": {
             "long_name": "Trampoline (Item)",
@@ -390,7 +390,7 @@
             "item_id": 100000049,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Traversal,Cardboard_Destroyer"
+            "item_groups": "Traversal,Cardboard_Destroyer,Item"
         },
         "Tower Shield (Craft)": {
             "long_name": "Tower Shield (Craft)",
@@ -406,7 +406,7 @@
             "item_id": 100000051,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Shield,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Shield,Item"
         },
         "Blue Scooter Board (Craft)": {
             "long_name": "Blue Scooter Board (Craft)",
@@ -430,7 +430,7 @@
             "item_id": 100000054,
             "classification": "useful",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Traversal"
+            "item_groups": "Traversal,Item"
         },
         "Skipping Rock (Item)": {
             "long_name": "Skipping Rock (Item)",
@@ -438,7 +438,7 @@
             "item_id": 100000055,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Ranged,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Ranged,Item"
         },
         "Space Blaster (Item)": {
             "long_name": "Space Blaster (Item)",
@@ -446,7 +446,7 @@
             "item_id": 100000056,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Ranged,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Ranged,Item"
         },
         "Shuriken (Item)": {
             "long_name": "Shuriken (Item)",
@@ -454,15 +454,15 @@
             "item_id": 100000057,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Ranged,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Ranged,Item"
         },
         "Bowling Bomb (Item)": {
             "long_name": "Bowling Bomb (Item)",
-            "short_name": "bowling_bomb",
+            "short_name": "bomb",
             "item_id": 100000058,
             "classification": "useful",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Item"
         },
         "Bubble Gum (Item)": {
             "long_name": "Bubble Gum (Item)",
@@ -470,7 +470,7 @@
             "item_id": 100000059,
             "classification": "useful",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Traversal"
+            "item_groups": "Traversal,Item"
         },
         "Sticky Hand (Item)": {
             "long_name": "Sticky Hand (Item)",
@@ -486,7 +486,7 @@
             "item_id": 100000061,
             "classification": "progression",
             "base_quantity_in_item_pool": 1,
-            "item_groups": "Item,Ranged,Cardboard_Destroyer"
+            "item_groups": "Cardboard_Destroyer,Ranged,Item"
         },
         "An Actual Digital Camera (Craft)": {
             "long_name": "An Actual Digital Camera (Craft)",
