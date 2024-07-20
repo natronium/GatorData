@@ -1,0 +1,374 @@
+[
+    {
+        "name": "Friend",
+        "type": "toggle",
+        "img": "images/items/friend_1.png",
+        "codes": "friend_1"
+    },
+    {
+        "name": "Friend x2",
+        "type": "toggle",
+        "img": "images/items/friend_2.png",
+        "codes": "friend_2"
+    },
+    {
+        "name": "Friend x3",
+        "type": "toggle",
+        "img": "images/items/friend_3.png",
+        "codes": "friend_3"
+    },
+    {
+        "name": "Friend x4",
+        "type": "toggle",
+        "img": "images/items/friend_4.png",
+        "codes": "friend_4"
+    },
+    {
+        "name": "Craft Stuff x15",
+        "type": "toggle",
+        "img": "images/items/craft_15.png",
+        "codes": "craft_15"
+    },
+    {
+        "name": "Craft Stuff x30",
+        "type": "toggle",
+        "img": "images/items/craft_30.png",
+        "codes": "craft_30"
+    },
+    {
+        "name": "Bracelet",
+        "type": "consumable",
+        "img": "images/items/bracelet.png",
+        "codes": "bracelet"
+    },
+    {
+        "name": "Glider",
+        "type": "toggle",
+        "img": "images/items/glider.png",
+        "codes": "glider"
+    },
+    {
+        "name": "Retainer",
+        "type": "toggle",
+        "img": "images/items/retainer.png",
+        "codes": "retainer"
+    },
+    {
+        "name": "Magic Ore",
+        "type": "toggle",
+        "img": "images/items/ore.png",
+        "codes": "ore"
+    },
+    {
+        "name": "Broken Scooter Board",
+        "type": "toggle",
+        "img": "images/items/broken_scooter.png",
+        "codes": "broken_scooter"
+    },
+    {
+        "name": "Cheese Sandwich",
+        "type": "toggle",
+        "img": "images/items/cheese_sandwich.png",
+        "codes": "sandwich"
+    },
+    {
+        "name": "Pot?",
+        "type": "toggle",
+        "img": "images/items/pot_q.png",
+        "codes": "pot_q"
+    },
+    {
+        "name": "Sorbet",
+        "type": "toggle",
+        "img": "images/items/sorbet.png",
+        "codes": "sorbet"
+    },
+    {
+        "name": "Grass Clippings",
+        "type": "toggle",
+        "img": "images/items/clippings.png",
+        "codes": "clippings"
+    },
+    {
+        "name": "Water",
+        "type": "toggle",
+        "img": "images/items/water.png",
+        "codes": "water"
+    },
+    {
+        "name": "Pointy Floppy Thing (Craft)",
+        "type": "toggle",
+        "img": "images/items/starter_hat.png",
+        "codes": "starter_hat"
+    },
+    {
+        "name": "Slime Hat (Craft)",
+        "type": "toggle",
+        "img": "images/items/slime_hat.png",
+        "codes": "slime_hat"
+    },
+    {
+        "name": "Artsy Beret (Craft)",
+        "type": "toggle",
+        "img": "images/items/beret_hat.png",
+        "codes": "beret_hat"
+    },
+    {
+        "name": "Space Dome (Item)",
+        "type": "toggle",
+        "img": "images/items/dome_hat.png",
+        "codes": "dome_hat"
+    },
+    {
+        "name": "Plastic Fangs (Item)",
+        "type": "toggle",
+        "img": "images/items/fangs_hat.png",
+        "codes": "fangs_hat"
+    },
+    {
+        "name": "Western Wide Brim (Item)",
+        "type": "toggle",
+        "img": "images/items/western_hat.png",
+        "codes": "western_hat"
+    },
+    {
+        "name": "Bucket (Item)",
+        "type": "toggle",
+        "img": "images/items/bucket.png",
+        "codes": "bucket"
+    },
+    {
+        "name": "Detective Cowl (Craft)",
+        "type": "toggle",
+        "img": "images/items/cowl_hat.png",
+        "codes": "cowl_hat"
+    },
+    {
+        "name": "Skater Helmet (Craft)",
+        "type": "toggle",
+        "img": "images/items/skater_hat.png",
+        "codes": "skater_hat"
+    },
+    {
+        "name": "Princess Tiara (Craft)",
+        "type": "toggle",
+        "img": "images/items/tiara_hat.png",
+        "codes": "tiara_hat"
+    },
+    {
+        "name": "Ninja Headband (Craft)",
+        "type": "toggle",
+        "img": "images/items/headband.png",
+        "codes": "headband"
+    },
+    {
+        "name": "Stick (Item)",
+        "type": "toggle",
+        "img": "images/items/stick.png",
+        "codes": "stick"
+    },
+    {
+        "name": "Sword (Item)",
+        "type": "toggle",
+        "img": "images/items/sword.png",
+        "codes": "sword"
+    },
+    {
+        "name": "Paintbrush (Craft)",
+        "type": "toggle",
+        "img": "images/items/paintbrush.png",
+        "codes": "paintbrush"
+    },
+    {
+        "name": "Cardboard Spear (Craft)",
+        "type": "toggle",
+        "img": "images/items/spear.png",
+        "codes": "spear"
+    },
+    {
+        "name": "Grabby Hand (Item)",
+        "type": "toggle",
+        "img": "images/items/grabby_hand.png",
+        "codes": "grabby_hand"
+    },
+    {
+        "name": "Laser Sword (Craft)",
+        "type": "toggle",
+        "img": "images/items/laser_sword.png",
+        "codes": "laser_sword"
+    },
+    {
+        "name": "Bug Net (Item)",
+        "type": "toggle",
+        "img": "images/items/bug_net.png",
+        "codes": "bug_net"
+    },
+    {
+        "name": "Nunchaku (Item)",
+        "type": "toggle",
+        "img": "images/items/nunchucks.png",
+        "codes": "nunchucks"
+    },
+    {
+        "name": "Thrown Pencil",
+        "type": "consumable",
+        "img": "images/items/thrown_pencil.png",
+        "codes": "thrown_pencil"
+    },
+    {
+        "name": "Oversized Pencil (Craft)",
+        "type": "toggle",
+        "img": "images/items/pencil.png",
+        "codes": "pencil"
+    },
+    {
+        "name": "Wrench (Item)",
+        "type": "toggle",
+        "img": "images/items/wrench.png",
+        "codes": "wrench"
+    },
+    {
+        "name": "Paleolithic Tool (Item)",
+        "type": "toggle",
+        "img": "images/items/paleolithic.png",
+        "codes": "paleolithic"
+    },
+    {
+        "name": "Princess Wand (Craft)",
+        "type": "toggle",
+        "img": "images/items/wand.png",
+        "codes": "wand"
+    },
+    {
+        "name": "Pot Lid (Item)",
+        "type": "toggle",
+        "img": "images/items/pot_lid.png",
+        "codes": "pot_lid"
+    },
+    {
+        "name": "Art Palette (Craft)",
+        "type": "toggle",
+        "img": "images/items/palette.png",
+        "codes": "palette"
+    },
+    {
+        "name": "Inner Tube (Craft)",
+        "type": "toggle",
+        "img": "images/items/tube.png",
+        "codes": "tube"
+    },
+    {
+        "name": "Platter (Item)",
+        "type": "toggle",
+        "img": "images/items/platter.png",
+        "codes": "platter"
+    },
+    {
+        "name": "Skateboard (Craft)",
+        "type": "toggle",
+        "img": "images/items/skateboard.png",
+        "codes": "skateboard"
+    },
+    {
+        "name": "Martin (Item)",
+        "type": "toggle",
+        "img": "images/items/martin_shield.png",
+        "codes": "martin_shield"
+    },
+    {
+        "name": "Chessboard (Craft)",
+        "type": "toggle",
+        "img": "images/items/chessboard.png",
+        "codes": "chessboard"
+    },
+    {
+        "name": "Big Leaf (Item)",
+        "type": "toggle",
+        "img": "images/items/big_leaf.png",
+        "codes": "big_leaf"
+    },
+    {
+        "name": "Trampoline (Item)",
+        "type": "toggle",
+        "img": "images/items/trampoline.png",
+        "codes": "trampoline"
+    },
+    {
+        "name": "Tower Shield (Craft)",
+        "type": "toggle",
+        "img": "images/items/tower_shield.png",
+        "codes": "tower_shield"
+    },
+    {
+        "name": "Trash Can Lid (Item)",
+        "type": "toggle",
+        "img": "images/items/trash_can.png",
+        "codes": "trash_can"
+    },
+    {
+        "name": "Blue Scooter Board (Craft)",
+        "type": "toggle",
+        "img": "images/items/blue_scooter.png",
+        "codes": "blue_scooter"
+    },
+    {
+        "name": "Ragdoll (Craft)",
+        "type": "toggle",
+        "img": "images/items/ragdoll.png",
+        "codes": "ragdoll"
+    },
+    {
+        "name": "Balloon (Item)",
+        "type": "toggle",
+        "img": "images/items/balloon.png",
+        "codes": "balloon"
+    },
+    {
+        "name": "Skipping Rock (Item)",
+        "type": "toggle",
+        "img": "images/items/rock.png",
+        "codes": "rock"
+    },
+    {
+        "name": "Space Blaster (Item)",
+        "type": "toggle",
+        "img": "images/items/blaster.png",
+        "codes": "blaster"
+    },
+    {
+        "name": "Shuriken (Item)",
+        "type": "toggle",
+        "img": "images/items/shuriken.png",
+        "codes": "shuriken"
+    },
+    {
+        "name": "Bowling Bomb (Item)",
+        "type": "toggle",
+        "img": "images/items/bowling_bomb.png",
+        "codes": "bomb"
+    },
+    {
+        "name": "Bubble Gum (Item)",
+        "type": "toggle",
+        "img": "images/items/bubblegum.png",
+        "codes": "bubblegum"
+    },
+    {
+        "name": "Sticky Hand (Item)",
+        "type": "toggle",
+        "img": "images/items/sticky_hand.png",
+        "codes": "sticky_hand"
+    },
+    {
+        "name": "Paint Blaster (Item)",
+        "type": "toggle",
+        "img": "images/items/paint_gun.png",
+        "codes": "paint_gun"
+    },
+    {
+        "name": "An Actual Digital Camera (Craft)",
+        "type": "toggle",
+        "img": "images/items/camera.png",
+        "codes": "camera"
+    }
+]

@@ -1,7 +1,7 @@
 import csv
 import enum
 import json
-from typing import Any, Dict, NamedTuple, Set
+from typing import Any, Dict, List, NamedTuple, Set
 
 class ItemGroup(enum.Enum):
     Friends = enum.auto()
@@ -20,6 +20,9 @@ class GatorItemData(NamedTuple):
     long_name: str
     short_name: str
     item_id: int
+    client_name_id: str
+    client_resource_amount: int
+    client_item_type: str
     classification: str
     base_quantity_in_item_pool: int
     item_groups: Set[ItemGroup]
@@ -30,7 +33,13 @@ class GatorItemTable(Dict[str,GatorItemData]):
             if data.short_name == short_name:
                 return data.long_name
         return None
-    
+
+class GatorItemPopData(NamedTuple):
+    name: str
+    type: str
+    img: str
+    codes: str
+
 # Cardboard Destroyer Group
 def is_destroyer(groups: Set[ItemGroup])  -> bool:
     sword_destroyer : Set[ItemGroup] = {ItemGroup["Sword"], ItemGroup["Item"]}
@@ -49,29 +58,40 @@ def load_item_csv() -> GatorItemTable:
         item_reader = csv.DictReader(file)
         for item in item_reader:
             id = int(item["ap_item_id"]) if item["ap_item_id"] else None
+            client_resource_amount = int(item["client_resource_amount"]) if item["client_resource_amount"] else None
             classification = item["ap_item_classification"]
             quantity = int(item["ap_base_quantity"]) if item["ap_base_quantity"] else 0
             groups = {ItemGroup[group] for group in item["ap_item_groups"].split(",") if group}
             if is_destroyer(groups):
                 groups.add(ItemGroup["Cardboard_Destroyer"])
-            items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, classification, quantity, groups)._asdict()
+            items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, item["client_name_id"],client_resource_amount,item["client_item_type"], classification, quantity, groups)._asdict()
     return items
 
 def get_item_code(item: GatorItemData) -> str:
-    if item["item_groups"].issuperset({ItemGroup["Sword"]}):
-        return "sword"
-    if item["item_groups"].issuperset({ItemGroup["Shield"]}):
-        return "shield"
-    if item["item_groups"].issuperset({ItemGroup["Ranged"]}):
-        return "ranged"
+    # if item["item_groups"].issuperset({ItemGroup["Sword"]}):
+    #     return "sword"
+    # if item["item_groups"].issuperset({ItemGroup["Shield"]}):
+    #     return "shield"
+    # if item["item_groups"].issuperset({ItemGroup["Ranged"]}):
+    #     return "ranged"
     if item["short_name"] == "bowling_bomb":
         return "bomb"
     if item["short_name"] == "cheese_sandwich":
         return "sandwich"
-    if item["short_name"] == "thrown_pencil":
-        return "thrown_pencil_1"
+    # if item["short_name"] == "thrown_pencil":
+    #     return "thrown_pencil_1"
     return item["short_name"]
-    
+
+def get_item_type(item: GatorItemData) -> str:
+    if item["short_name"] == "bracelet" or item["short_name"] == "thrown_pencil":
+        return "consumable"
+    else:
+        return "toggle"
+
+def get_item_image(item: GatorItemData) -> str:
+    base_path = "images/items/"
+    ext =  ".png"
+    return base_path + item["short_name"] + ext
 
 def convert_items_to_lua(items: GatorItemTable) -> str:
     lua_data = "ITEM_MAPPING = {\n"
@@ -108,8 +128,23 @@ def export_json():
 
     items = load_item_csv()
 
+    for name,item in items.items():
+        item["short_name"] = get_item_code(item)
+        items[name] = item
+
     with open("items.json","w") as file:
         json.dump([items], file, indent=4, cls=SetItemGroupEncoder)
 
+def export_pop_json():
+    items = load_item_csv()
+    pop_items : List[GatorItemPopData] = []
+    for _, item in items.items():
+        pop_items.append(GatorItemPopData(name=item["long_name"],type=get_item_type(item),img=get_item_image(item), codes=get_item_code(item))._asdict())
+
+    with open("items_pop.json","w") as file:
+        json.dump(pop_items, file, indent=4, cls=SetItemGroupEncoder)
+
+
 export_lua()
 export_json()
+export_pop_json()
