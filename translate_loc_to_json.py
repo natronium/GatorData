@@ -4,7 +4,7 @@ import csv
 import json
 
 import os
-from typing import Any, Dict, NamedTuple, Set, List, Tuple
+from typing import Any, Dict, List, NamedTuple, Tuple
 
 map_image_side_length_px = 2048
 
@@ -342,30 +342,30 @@ def export_lua():
 
 
 region_access_rules: Dict[str, List[str]] = load_region_access_rules()
-gator_regions: Dict[str, Set[str]] = {
-    "Menu": {"Tutorial Island"},
-    "Tutorial Island": {
+gator_regions: Dict[str, List[str]] = {
+    "Menu": ["Tutorial Island"],
+    "Tutorial Island": [
         "Big Island",
         "Tutorial Island Races",
         "Tutorial Island Breakables",
         "Pots Shootable from Tutorial Island",
-    },
-    "Pots Shootable from Tutorial Island": set(),
-    "Tutorial Island Races": set(),
-    "Tutorial Island Breakables": set(),
-    "Big Island": {
+    ],
+    "Pots Shootable from Tutorial Island": [],
+    "Tutorial Island Races": [],
+    "Tutorial Island Breakables": [],
+    "Big Island": [
         "Big Island Races",
         "Big Island Breakables",
         "Mountain",
         "Junk 4 Trash",
         "Big Island Bracelet Shops",
-    },
-    "Big Island Races": set(),
-    "Big Island Breakables": set(),
-    "Mountain": {"Mountain Breakables"},
-    "Mountain Breakables": set(),  # Intentionally omitting connection to Pots Shootable because avoiding loop, dealt with via access rules
-    "Junk 4 Trash": set(),
-    "Big Island Bracelet Shops": set(),
+    ],
+    "Big Island Races": [],
+    "Big Island Breakables": [],
+    "Mountain": ["Mountain Breakables"],
+    "Mountain Breakables": [],  # Intentionally omitting connection to Pots Shootable because avoiding loop, dealt with via access rules
+    "Junk 4 Trash": [],
+    "Big Island Bracelet Shops": [],
 }
 
 export_json()

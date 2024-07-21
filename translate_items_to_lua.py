@@ -25,7 +25,7 @@ class GatorItemData(NamedTuple):
     client_item_type: str
     classification: str
     base_quantity_in_item_pool: int
-    item_groups: Set[ItemGroup]
+    item_groups: List[ItemGroup]
 
 class GatorItemTable(Dict[str,GatorItemData]):
     def short_to_long(self, short_name: str) -> str:
@@ -41,11 +41,11 @@ class GatorItemPopData(NamedTuple):
     codes: str
 
 # Cardboard Destroyer Group
-def is_destroyer(groups: Set[ItemGroup])  -> bool:
+def is_destroyer(groups: List[ItemGroup])  -> bool:
     sword_destroyer : Set[ItemGroup] = {ItemGroup["Sword"], ItemGroup["Item"]}
     shield_destroyer : Set[ItemGroup] = {ItemGroup["Shield"], ItemGroup["Item"]}
     ranged_destroyer : Set[ItemGroup] = {ItemGroup["Ranged"], ItemGroup["Item"]}
-    return groups.issuperset(sword_destroyer) or groups.issuperset(shield_destroyer) or groups.issuperset(ranged_destroyer)
+    return set(groups).issuperset(sword_destroyer) or set(groups).issuperset(shield_destroyer) or set(groups).issuperset(ranged_destroyer)
 
 def load_item_csv() -> GatorItemTable:
     try:
@@ -68,18 +68,10 @@ def load_item_csv() -> GatorItemTable:
     return items
 
 def get_item_code(item: GatorItemData) -> str:
-    # if item["item_groups"].issuperset({ItemGroup["Sword"]}):
-    #     return "sword"
-    # if item["item_groups"].issuperset({ItemGroup["Shield"]}):
-    #     return "shield"
-    # if item["item_groups"].issuperset({ItemGroup["Ranged"]}):
-    #     return "ranged"
     if item["short_name"] == "bowling_bomb":
         return "bomb"
     if item["short_name"] == "cheese_sandwich":
         return "sandwich"
-    # if item["short_name"] == "thrown_pencil":
-    #     return "thrown_pencil_1"
     return item["short_name"]
 
 def get_item_type(item: GatorItemData) -> str:
@@ -98,10 +90,10 @@ def convert_items_to_lua(items: GatorItemTable) -> str:
     for _, data in items.items():
         item_id = data["item_id"]
         item_code = get_item_code(data)
-        if item_code != "bracelet" and item_code != "thrown_pencil_1":
+        if item_code != "bracelet" and item_code != "thrown_pencil":
             item_type = "toggle"
         else:
-            item_type = "progressive"
+            item_type = "consumable"
         lua_data += "    [" + str(item_id) + "] = {\"" + item_code +"\", \"" + item_type + "\"},\n"
 
     lua_data += "}"
