@@ -207,6 +207,11 @@
         "$ranged",
         "bracelet"
     ],
+    "nm_pot_C4_52": [
+        "$ranged",
+        "bracelet",
+        "$shield_jump"
+    ],
     "nm_pot_C4_80": [
         "$ranged",
         "bracelet"
@@ -227,9 +232,20 @@
         "$ranged",
         "$has_at_least_n_bracelet|2"
     ],
+    "nm_pot_C3_1167": [
+        "$ranged",
+        "bracelet",
+        "glider"
+    ],
+    "nm_pot_D3_1195": [
+        "$ranged",
+        "bracelet",
+        "glider"
+    ],
     "nwt_pot_B1_425": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "nwt_pot_B2_427": [
         "$ranged",
@@ -244,15 +260,18 @@
     ],
     "nwt_pot_B1_412": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "nwt_pot_C2_372": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "nwt_chest_D1_184": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "nwt_race_C2_392": [
         "$shield"
@@ -271,10 +290,6 @@
         "$shield,bracelet"
     ],
     "nm_race_D5_1746": [
-        "bracelet"
-    ],
-    "nm_pot_D3_1195": [
-        "$ranged",
         "bracelet"
     ],
     "nec_race_C7_754": [
@@ -306,7 +321,8 @@
     ],
     "cr_pot_F4_2074": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "ec_pot_F9_652": [
         "$ranged",
@@ -315,13 +331,18 @@
     "wf_race_G0_73": [
         "$shield"
     ],
+    "wf_pot_G4_1541": [
+        "$ranged",
+        "bracelet"
+    ],
     "wf_pot_G4_1542": [
         "$ranged",
         "bracelet"
     ],
     "wf_pot_G4_1543": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "wf_chest_H4_1519": [
         "$ranged",
@@ -349,11 +370,13 @@
     ],
     "wf_pot_J2_1584": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "seb_pot_J6_102": [
         "$ranged",
-        "bracelet"
+        "bracelet",
+        "$shield_jump"
     ],
     "wf_pot_H4_1533": [
         "$ranged",

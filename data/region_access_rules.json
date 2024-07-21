@@ -10,6 +10,7 @@
     ],
     "Pots Shootable from Tutorial Island": [
         "$ranged",
+        "$can_clear_tutorial,$shield_jump",        
         "$can_clear_tutorial,bracelet,$cardboard_destroyer",
         "$can_clear_tutorial,glider,$cardboard_destroyer"
     ],

@@ -34,7 +34,7 @@
                         "client_name_id": "Shirt",
                         "location_group": "",
                         "access_rules": [
-                            "starter_hat, $cardboard_destroyer"
+                            "starter_hat,$cardboard_destroyer"
                         ]
                     }
                 ]
@@ -1888,7 +1888,8 @@
                                         "location_group": "Pot",
                                         "access_rules": [
                                             "$ranged",
-                                            "bracelet"
+                                            "bracelet",
+                                            "$shield_jump"
                                         ]
                                     }
                                 ]
@@ -2757,7 +2758,10 @@
                                         "client_id": 1541,
                                         "client_name_id": "",
                                         "location_group": "Pot",
-                                        "access_rules": []
+                                        "access_rules": [
+                                            "$ranged",
+                                            "bracelet"
+                                        ]
                                     }
                                 ]
                             },
@@ -2808,7 +2812,8 @@
                                         "location_group": "Pot",
                                         "access_rules": [
                                             "$ranged",
-                                            "bracelet"
+                                            "bracelet",
+                                            "$shield_jump"
                                         ]
                                     }
                                 ]
@@ -2834,7 +2839,8 @@
                                         "location_group": "Pot",
                                         "access_rules": [
                                             "$ranged",
-                                            "bracelet"
+                                            "bracelet",
+                                            "$shield_jump"
                                         ]
                                     }
                                 ]
@@ -3070,7 +3076,8 @@
                                         "location_group": "Pot",
                                         "access_rules": [
                                             "$ranged",
-                                            "bracelet"
+                                            "bracelet",
+                                            "$shield_jump"
                                         ]
                                     }
                                 ]
@@ -3373,7 +3380,11 @@
                                                 "client_id": 52,
                                                 "client_name_id": "",
                                                 "location_group": "Pot",
-                                                "access_rules": []
+                                                "access_rules": [
+                                                    "$ranged",
+                                                    "bracelet",
+                                                    "$shield_jump"
+                                                ]
                                             }
                                         ]
                                     },
@@ -4171,7 +4182,8 @@
                                 "location_group": "Chest",
                                 "access_rules": [
                                     "$ranged",
-                                    "bracelet"
+                                    "bracelet",
+                                    "$shield_jump"
                                 ]
                             }
                         ]
@@ -4473,7 +4485,8 @@
                                 "location_group": "Pot",
                                 "access_rules": [
                                     "$ranged",
-                                    "bracelet"
+                                    "bracelet",
+                                    "$shield_jump"
                                 ]
                             }
                         ]
@@ -4548,7 +4561,8 @@
                                 "location_group": "Pot",
                                 "access_rules": [
                                     "$ranged",
-                                    "bracelet"
+                                    "bracelet",
+                                    "$shield_jump"
                                 ]
                             }
                         ]
@@ -4597,7 +4611,8 @@
                                 "location_group": "Pot",
                                 "access_rules": [
                                     "$ranged",
-                                    "bracelet"
+                                    "bracelet",
+                                    "$shield_jump"
                                 ]
                             }
                         ]
@@ -4705,6 +4720,7 @@
                 "name": "Pots Shootable from Tutorial Island",
                 "access_rules": [
                     "$ranged",
+                    "$can_clear_tutorial,$shield_jump",
                     "$can_clear_tutorial,bracelet,$cardboard_destroyer",
                     "$can_clear_tutorial,glider,$cardboard_destroyer"
                 ],
@@ -4774,7 +4790,11 @@
                                 "client_id": 1167,
                                 "client_name_id": "",
                                 "location_group": "Pot",
-                                "access_rules": []
+                                "access_rules": [
+                                    "$ranged",
+                                    "bracelet",
+                                    "glider"
+                                ]
                             }
                         ]
                     },
@@ -4799,7 +4819,8 @@
                                 "location_group": "Pot",
                                 "access_rules": [
                                     "$ranged",
-                                    "bracelet"
+                                    "bracelet",
+                                    "glider"
                                 ]
                             }
                         ]
