@@ -1,1 +1,5 @@
 # GatorData
+
+This project is designed to hold the "source-of-truth" json files for the items and locations json files used in a set of repositories for a Lil Gator Game randomizer: [APWorld](https://github.com/natronium/GatorArchipelago), [Poptracker pack](https://github.com/natronium/GatorPop), and [plugin](https://github.com/natronium/GatorRando) (not yet using the json). Position data used in this repository pulled from the game using [GatorInfo](https://github.com/natronium/GatorInfo) (and corresponds to data used in [GatorMap](https://github.com/natronium/GatorMap)).
+
+Currently, locations_raw.json, items.json, and items_pop.json are programatically generated from the .csvs and .json files in data, though that may change as more complicated and/or specialized operations are needed to produce accurate and useful results for their respective use cases.
