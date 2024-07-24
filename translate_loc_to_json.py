@@ -226,21 +226,34 @@ def construct_sectioned_locations(
         section_names = [location.long_name for location in locations]
         common_prefix = os.path.commonprefix(section_names)
         if common_prefix != "":
-            parts = common_prefix.partition(" - ")
-            if location_pos == (5.362534, 154.2351):
-                namey_name = "Junk 4 Trash"
-            elif location_pos == (267.8625, 73.81152):
-                namey_name = "Flint (BombBowl Mole)"
-            elif location_pos == (-56.216, 220.591):
-                namey_name = "Sam (Pencil Jackal)"
-            elif location_pos == (-78.2, -106.54):
-                namey_name = "Ninja Clan"
-            else:
-                namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC").removesuffix(" Quest Completion").removesuffix(" ")
+            parts = common_prefix.partition(" - ")    
+            namey_name = parts[2].removesuffix(" Quest Completion ").removesuffix(" Quest Completion NPC").removesuffix(" Quest Completion").removesuffix(" ")
         else:
             namey_name = str(location_pos)
         if namey_name == "":
             namey_name = str(location_pos)
+        
+        if location_pos == (5.362534, 154.2351):
+            namey_name = "Junk 4 Trash"
+        elif location_pos == (267.8625, 73.81152):
+            namey_name = "Flint (BombBowl Mole)"
+        elif location_pos == (-56.216, 220.591):
+            namey_name = "Sam (Pencil Jackal)"
+        elif location_pos == (-78.2, -106.54):
+            namey_name = "Ninja Clan"
+        elif location_pos == (148.17, 102.75):
+            namey_name = "Andromeda (Space Hawk)"
+        elif location_pos == (185.7675, 158.2035):
+            namey_name = "Esme (Vampire Bat)"
+        elif location_pos == (-79.67713, -82.9561):
+            namey_name = "Zhu (Skipping Fox)"
+        elif location_pos == (102.2629, 249.3436):
+            namey_name = "Jada (Cool Boar)"
+        elif location_pos == (62.871, 237.2092):
+            namey_name = "??? (Bracelet Monkey) Windmill"
+
+        # if location_pos in []:
+        #     additional_sections = construct_additional_sections(location_pos)
         
         location_data_table[location_pos] = LocationData(
             name=namey_name,
@@ -252,7 +265,6 @@ def construct_sectioned_locations(
             sections=[construct_section(location) for location in locations],
         )._asdict()
     return location_data_table
-
 
 def define_region(
     region_name: str,
