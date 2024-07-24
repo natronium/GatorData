@@ -4,11 +4,6 @@ from PIL import Image, ImageFont, ImageDraw
 
 
 def load_item_json() -> Dict[str,str]:
-    try:
-        from importlib.resources import files
-    except ImportError:
-        from importlib_resources import files  # type: ignore
-
     items: Dict[str,str] = {}
     with open("items_pop.json") as file:
         item_reader = json.load(file)
