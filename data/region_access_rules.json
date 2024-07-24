@@ -1,0 +1,42 @@
+{
+    "Menu": [
+        ""
+    ],
+    "Tutorial Island": [
+        ""
+    ],
+    "Tutorial Island Breakables": [
+        "$cardboard_destroyer"
+    ],
+    "Pots Shootable from Tutorial Island": [
+        "$ranged",
+        "$can_clear_tutorial,$shield_jump",        
+        "$can_clear_tutorial,bracelet,$cardboard_destroyer",
+        "$can_clear_tutorial,glider,$cardboard_destroyer"
+    ],
+    "Tutorial Island Races": [
+        ""
+    ],
+    "Big Island": [
+        "$can_clear_tutorial"
+    ],
+    "Big Island Races": [
+        ""
+    ],
+    "Big Island Breakables": [
+        "$cardboard_destroyer"
+    ],
+    "Mountain": [
+        "bracelet",
+        "glider"
+    ],
+    "Mountain Breakables": [
+        "$cardboard_destroyer"
+    ],
+    "Junk 4 Trash": [
+        "$cardboard_destroyer"
+    ],
+    "Big Island Bracelet Shops": [
+        "bracelet,$cardboard_destroyer"
+    ]
+}
