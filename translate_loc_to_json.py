@@ -211,6 +211,15 @@ def construct_section(location: GatorLocationData) -> Section:
         access_rules=location.access_rules,
     )._asdict()
 
+# def construct_additional_sections(location_pos : Tuple[int, int]) -> Section:
+#     return Section(
+#         name = location.long_name,
+#         region=location.region,
+#         client_id=location.client_id,
+#         client_name_id=location.client_name_id,
+#         location_group=location.location_group,
+#         access_rules=location.access_rules,
+#     )._asdict()
 
 def construct_sectioned_locations(
     gator_location_table: GatorLocationTable,

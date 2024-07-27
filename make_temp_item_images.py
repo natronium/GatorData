@@ -35,15 +35,20 @@ def text_to_image(
     img = img.crop(text_window)
     return img
 
+def make_images_from_name_path_dict(name_path_dict: Dict[str,str]):
+    for name, path in name_path_dict.items():
+        font_filepath = "C:\\Windows\\Fonts\\arialbd.ttf"
+        multiline = name.split("(")[0].replace(" ","\n")
+        new_multiline_array = multiline.split("\n")
+        for i, line in enumerate(multiline.split("\n")):
+            if len(line) > 8:
+                new_line = line[0:5] + "-\n" + line[5:]
+                new_multiline_array[i] = new_line
+        new_multiline = "\n".join(str(x) for x in new_multiline_array)
+        img = text_to_image(new_multiline, font_filepath, 14, "white")
+        img.save(path)
 
-for name, path in load_item_json().items():
-    font_filepath = "C:\\Windows\\Fonts\\arialbd.ttf"
-    multiline = name.split("(")[0].replace(" ","\n")
-    new_multiline_array = multiline.split("\n")
-    for i, line in enumerate(multiline.split("\n")):
-        if len(line) > 8:
-            new_line = line[0:5] + "-\n" + line[5:]
-            new_multiline_array[i] = new_line
-    new_multiline = "\n".join(str(x) for x in new_multiline_array)
-    img = text_to_image(new_multiline, font_filepath, 14, "white")
-    img.save(path)
+option_dict = {"Shield Jump": "images/items/shield_jump.png", "Start With Freeplay": "images/items/freeplay.png", "Harder Ranged Quests": "images/items/hard.png"}
+
+make_images_from_name_path_dict(load_item_json())
+make_images_from_name_path_dict(option_dict)
