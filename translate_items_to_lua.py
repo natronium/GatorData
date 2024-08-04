@@ -47,6 +47,15 @@ def is_destroyer(groups: List[ItemGroup])  -> bool:
     ranged_destroyer : Set[ItemGroup] = {ItemGroup["Ranged"], ItemGroup["Item"]}
     return set(groups).issuperset(sword_destroyer) or set(groups).issuperset(shield_destroyer) or set(groups).issuperset(ranged_destroyer)
 
+def construct_client_item_type(client_item_type: str) -> str:
+    if client_item_type == "Craft Stuff":
+        return "Craft_Stuff"
+    elif client_item_type == "Friends":
+        return "Friend"
+    else:
+        return client_item_type
+
+
 def load_item_csv() -> GatorItemTable:
     try:
         from importlib.resources import files
@@ -62,7 +71,7 @@ def load_item_csv() -> GatorItemTable:
             classification = item["ap_item_classification"]
             quantity = int(item["ap_base_quantity"]) if item["ap_base_quantity"] else 0
             groups = {ItemGroup[group] for group in item["ap_item_groups"].split(",") if group}
-            client_item_type = "Craft_Stuff" if item["client_item_type"] == "Craft Stuff" else item["client_item_type"]
+            client_item_type = construct_client_item_type(item["client_item_type"])
             if is_destroyer(groups):
                 groups.add(ItemGroup["Cardboard_Destroyer"])
             items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, item["client_name_id"],client_resource_amount,client_item_type, classification, quantity, groups)._asdict()
