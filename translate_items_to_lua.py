@@ -62,9 +62,10 @@ def load_item_csv() -> GatorItemTable:
             classification = item["ap_item_classification"]
             quantity = int(item["ap_base_quantity"]) if item["ap_base_quantity"] else 0
             groups = {ItemGroup[group] for group in item["ap_item_groups"].split(",") if group}
+            client_item_type = "Craft_Stuff" if item["client_item_type"] == "Craft Stuff" else item["client_item_type"]
             if is_destroyer(groups):
                 groups.add(ItemGroup["Cardboard_Destroyer"])
-            items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, item["client_name_id"],client_resource_amount,item["client_item_type"], classification, quantity, groups)._asdict()
+            items[item["longname"]] = GatorItemData(item["longname"], item["shortname"], id, item["client_name_id"],client_resource_amount,client_item_type, classification, quantity, groups)._asdict()
     return items
 
 def get_item_code(item: GatorItemData) -> str:
