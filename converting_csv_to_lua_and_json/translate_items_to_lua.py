@@ -113,7 +113,7 @@ def export_lua():
 
     lua_data = convert_items_to_lua(load_item_csv())
 
-    with open("item_mapping.lua","w") as file:
+    with open("..\\generated_products\\item_mapping.lua","w") as file:
         file.write(lua_data)
 
 class SetItemGroupEncoder(json.JSONEncoder):
@@ -134,7 +134,7 @@ def export_json():
         item["short_name"] = get_item_code(item)
         items[name] = item
 
-    with open("items.json","w") as file:
+    with open("..\\generated_products\\items.json","w") as file:
         json.dump([items], file, indent=4, cls=SetItemGroupEncoder)
 
 def export_pop_json():
@@ -143,7 +143,7 @@ def export_pop_json():
     for _, item in items.items():
         pop_items.append(GatorItemPopData(name=item["long_name"],type=get_item_type(item),img=get_item_image(item), codes=get_item_code(item))._asdict())
 
-    with open("items_pop.json","w") as file:
+    with open("..\\generated_products\\items_pop.json","w") as file:
         json.dump(pop_items, file, indent=4, cls=SetItemGroupEncoder)
 
 

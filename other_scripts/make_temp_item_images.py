@@ -5,7 +5,7 @@ from PIL import Image, ImageFont, ImageDraw
 
 def load_item_json() -> Dict[str,str]:
     items: Dict[str,str] = {}
-    with open("items_pop.json") as file:
+    with open("..\\generated_products\\items_pop.json") as file:
         item_reader = json.load(file)
         for item in item_reader:
             items[item["name"]] = item["img"]
@@ -46,7 +46,7 @@ def make_images_from_name_path_dict(name_path_dict: Dict[str,str]):
                 new_multiline_array[i] = new_line
         new_multiline = "\n".join(str(x) for x in new_multiline_array)
         img = text_to_image(new_multiline, font_filepath, 14, "white")
-        img.save(path)
+        img.save("..\\generated_products\\" + path)
 
 option_dict = {"Shield Jump": "images/items/shield_jump.png", "Start With Freeplay": "images/items/freeplay.png", "Harder Ranged Quests": "images/items/hard.png"}
 

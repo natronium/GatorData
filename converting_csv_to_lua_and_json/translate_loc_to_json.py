@@ -344,7 +344,7 @@ def export_json():
         sectioned_location_table=construct_sectioned_locations(load_location_csv()),
     )
 
-    with open("locations_raw.json", "w") as file:
+    with open("..\\generated_products\\locations_raw.json", "w") as file:
         json.dump([regions], file, indent=4, cls=NamedTupleEncoder)
 
 def export_lua():
@@ -358,7 +358,7 @@ def export_lua():
 
     lua_data = convert_regions_to_lua(regions)
 
-    with open("location_mapping.lua","w") as file:
+    with open("..\\generated_products\\location_mapping.lua","w") as file:
         file.write(lua_data)
 
 
